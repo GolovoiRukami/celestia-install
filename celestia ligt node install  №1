@@ -26,7 +26,7 @@ git checkout tags/v0.6.2
 make install
 make cel-key
 
-celestia light init
+celestia light init --p2p.network mocha 
 
 celestia light start --core.ip https://grpc-mocha.pops.one/ --core.grpc.port 9090 --gateway --gateway.addr localhost --gateway.port 26659 --p2p.network mocha
 celestia light start --core.ip <ip-address> --core.grpc.port <port> --gateway --gateway.addr <ip-address> --gateway.port <port> --p2p.network mocha
